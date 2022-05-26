@@ -22,19 +22,27 @@ html {
   scroll-behavior: smooth;
 }
 
+svg {
+  fill: white;
+}
+
 h1 {
   //font-size: clamp(2.5rem, calc(2.5rem + 1.6949vw), 5rem);
   font-size: clamp(40px, 8vw, 80px);
   font-family: var(--sans-serif-font);
+  letter-spacing: 0.03rem;
 }
 
 h2 {
   font-size: clamp(30px, 8vw, 50px);
   font-family: var(--sans-serif-font);
+  letter-spacing: 0.03rem;
 }
 
 h3 {
-  font-size: clamp(1rem, calc(1rem + 1.2429vw), 3.75rem);
+  font-family: var(--sans-serif-font);
+  font-size: clamp(20px, 8vw, 30px);
+  letter-spacing: 0.03rem;
 }
 
 h4 {
@@ -45,12 +53,17 @@ p {
   font-size: clamp(0.75rem, calc(0.75rem + 0.226vw), 1.25rem);
   line-height: 1.35rem;
   letter-spacing: 0.03rem;
+  font-family: var(--sans-serif-font);
 }
 
 a {
   font-size: clamp(0.75rem, calc(0.75rem + 0.226vw), 1rem);
   text-decoration: none;
   color: #000;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .grid {
@@ -88,6 +101,7 @@ img {
   align-items: center;
   position: fixed;
   top: 0;
+  z-index: 10;
   background-color: rgba(0, 0, 0, 0.797);
 
   img {
@@ -112,6 +126,7 @@ img {
   margin-top: 1.25rem;
 }
 
+// ?CONTACT MAIL
 .contact-mail {
   width: 40px;
   position: fixed;
@@ -190,7 +205,6 @@ main {
   h1 {
     font-family: var(--sans-serif-font);
     color: var(--accent-color);
-    letter-spacing: 0.03rem;
   }
 
   .build-websites {
@@ -293,7 +307,7 @@ main {
   margin: 0.75rem;
   margin-left: -3rem;
   height: 2px;
-  width: 140px;
+  width: 150px;
   background-color: var(--light-grey);
 }
 
@@ -303,10 +317,13 @@ main {
   align-items: center;
 }
 
+// !SKILLS
 .skills {
   // background-color: rgb(23, 0, 68);
   min-height: 400px;
   padding-bottom: 100px;
+  width: 60vw;
+  margin: 0 auto;
   h2 {
     margin-left: 3rem;
     color: var(--accent-color);
@@ -320,31 +337,125 @@ main {
     margin-top: 1.5rem;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 40px;
 
     .card {
       width: 120px;
       height: 120px;
-      border: 2px solid var(--accent-color);
-      border-radius: 14px;
-      box-shadow: 0px 4px 25px rgba(255, 30, 86, 0.711);
+      border: 1px solid var(--accent-color);
+      border-radius: 10px;
       cursor: pointer;
       transition: all ease-in-out 0.2s;
       &:hover {
         // transform: translateY(-10px) ;
         transform: scale(1.1);
+        box-shadow: 0px 5px 30px rgba(255, 30, 86, 0.711);
       }
       img {
-        height: 50%;
-        width: 50%;
+        height: 40%;
+        width: 40%;
       }
     }
   }
 }
 
+// !PROJECTS
+.projects {
+  padding: 200px 0;
+  h2 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+  }
+  .projects-wrapper + .projects-wrapper {
+    padding: 80px 0;
+  }
+
+  .projects-wrapper {
+    flex-direction: column;
+    margin-top: 1.5rem;
+    // padding: 100px 0;
+
+    .project-box {
+      gap: 30px;
+
+      .project-img {
+        // min-width: 500px;
+        min-height: 450px;
+        object-fit: cover;
+      }
+
+      .project-text {
+        h3 {
+          color: var(--accent-color);
+        }
+        p {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          margin-left: -4rem;
+          background-color: #4f1121;
+          padding: 25px 40px;
+        }
+        .skills-used {
+          margin-top: 0.5rem;
+          justify-content: flex-start;
+          li {
+            margin-right: 1rem;
+            font-family: var(--serif-font);
+            color: var(--accent-color);
+          }
+        }
+        .project-links {
+          justify-content: flex-start;
+          margin-top: 1rem;
+          gap: 30px;
+          .project-btn {
+            svg {
+              width: 25px;
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                fill: var(--accent-color);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// !MEDIA QUERIES
+
 @media only screen and (max-width: 1200px) {
-  main {
-    width: 80vw;
+  // main {
+  //   width: 80vw;
+  // }
+
+  .projects {
+    .projects-wrapper {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      .project-box {
+        gap: 0;
+        .project-img {
+          min-height: auto;
+          max-height: 250px;
+          object-fit: cover;
+        }
+
+        .project-text {
+          background-color: #4f1121;
+          padding: 20px 30px;
+          h3 {
+            color: var(--accent-color);
+          }
+          p {
+            margin: 0;
+            padding: 10px 0;
+          }
+        }
+      }
+    }
   }
 
   .skills {
