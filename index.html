@@ -12,14 +12,14 @@
     />
   </head>
   <body>
-    <!--! NAVBAR  -->
+    <!--!NAVBAR  -->
     <div class="navbar">
       <a href="#"><img src="images/logo.svg" alt="" /></a>
       <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
 
@@ -187,8 +187,7 @@
         </div>
         <div class="projects-wrapper flex">
           <div class="project-box grid">
-            <img class="project-img" src="images/project1.jpeg" alt="" />
-            <div class="project-text">
+            <div class="project-text left-side">
               <h3>Project Name</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
@@ -251,9 +250,68 @@
                 </a>
               </div>
             </div>
+            <img class="project-img" src="images/project1.jpeg" alt="" />
           </div>
         </div>
       </section>
+
+      <section id="contact" class="contact-page">
+        <h2>Get In Touch</h2>
+        <div class="h-line"></div>
+        <form>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your Name*"
+            required
+          />
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your Email*"
+            required
+          />
+
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Subject*"
+            required
+          />
+
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your Message*"
+            required
+          ></textarea>
+          <input type="submit" value="Submit" class="submit-btn" />
+        </form>
+      </section>
     </main>
+
+    <!-- !FOOTER -->
+    <footer class="flex">
+      <div class="footer-social-links">
+        <a href="https://www.github.com" target="_blank">
+          <i class="bx bxl-github bx-md"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <i class="bx bxl-twitter bx-md"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <i class="bx bxl-linkedin-square bx-md"></i>
+        </a>
+      </div>
+      <div class="footer-contact-mail">
+        <a href="mailto:alexbenny2811@gmail.com">alexbenny2811@gmail.com</a>
+      </div>
+    </footer>
   </body>
 </html>

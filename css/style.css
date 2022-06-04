@@ -4,6 +4,7 @@
   --sans-serif-font: "Raleway", sans-serif;
   --bg-color: #000;
   --accent-color: #ff1e56;
+  --dark-accent: #350e18;
   --light-color: #fff;
   --light-grey: #c0c0c0;
 }
@@ -96,6 +97,40 @@ img {
   width: 100%;
 }
 
+.line {
+  background-color: var(--light-grey);
+  width: 2px;
+  height: 100px;
+  margin-top: 1.25rem;
+}
+
+.h-line {
+  position: relative;
+  margin: 0.75rem;
+  margin-left: -3rem;
+  height: 2px;
+  width: 150px;
+  background-color: var(--light-grey);
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main {
+  min-height: 200vh;
+  width: 60vw;
+  margin: 0 auto;
+}
+
 .navbar {
   padding: 40px;
   max-height: 140px;
@@ -131,11 +166,61 @@ img {
   color: var(--accent-color);
 }
 
-.line {
-  background-color: var(--light-grey);
-  width: 2px;
-  height: 100px;
-  margin-top: 1.25rem;
+.hero {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.hero h1 {
+  font-family: var(--sans-serif-font);
+  color: var(--accent-color);
+}
+
+.hero .build-websites {
+  color: var(--light-grey);
+}
+
+.hero .hi {
+  font-family: var(--serif-font);
+  font-style: italic;
+  margin-bottom: 1em;
+  color: var(--light-color);
+}
+
+.hero .desc {
+  font-family: var(--sans-serif-font);
+  max-width: 600px;
+  margin-top: 1rem;
+  color: var(--light-grey);
+}
+
+.hero .contact-me {
+  display: inline-block;
+  font-family: var(--serif-font);
+  padding: 10px 20px;
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  margin-top: 1.5rem;
+  border-radius: 5px;
+  -webkit-transition: all ease-in 0.1s;
+  transition: all ease-in 0.1s;
+}
+
+.hero .contact-me:hover {
+  background-color: #ff1e565b;
 }
 
 .contact-mail {
@@ -221,69 +306,6 @@ img {
           transform: translateY(-0.5rem);
 }
 
-main {
-  min-height: 200vh;
-  width: 60vw;
-  margin: 0 auto;
-}
-
-.hero {
-  padding: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 100vh;
-}
-
-.hero h1 {
-  font-family: var(--sans-serif-font);
-  color: var(--accent-color);
-}
-
-.hero .build-websites {
-  color: var(--light-grey);
-}
-
-.hero .hi {
-  font-family: var(--serif-font);
-  font-style: italic;
-  margin-bottom: 1em;
-  color: var(--light-color);
-}
-
-.hero .desc {
-  font-family: var(--sans-serif-font);
-  max-width: 600px;
-  margin-top: 1rem;
-  color: var(--light-grey);
-}
-
-.hero .contact-me {
-  display: inline-block;
-  font-family: var(--serif-font);
-  padding: 10px 20px;
-  color: var(--accent-color);
-  border: 2px solid var(--accent-color);
-  margin-top: 1.5rem;
-  border-radius: 5px;
-  -webkit-transition: all ease-in 0.1s;
-  transition: all ease-in 0.1s;
-}
-
-.hero .contact-me:hover {
-  background-color: #ff1e565b;
-}
-
 .about-me {
   padding: 200px 0;
 }
@@ -346,27 +368,6 @@ main {
 .about-me .about-me-text p span {
   color: var(--accent-color);
   font-family: var(--serif-font);
-}
-
-.h-line {
-  position: relative;
-  margin: 0.75rem;
-  margin-left: -3rem;
-  height: 2px;
-  width: 150px;
-  background-color: var(--light-grey);
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .skills {
@@ -450,6 +451,16 @@ main {
      object-fit: cover;
 }
 
+.projects .projects-wrapper .project-box .left-side.project-text {
+  margin-left: 2rem;
+  margin-right: -4rem;
+  z-index: 2;
+}
+
+.projects .projects-wrapper .project-box .left-side.project-text p {
+  margin-left: -2rem;
+}
+
 .projects .projects-wrapper .project-box .project-text h3 {
   color: var(--accent-color);
 }
@@ -458,8 +469,9 @@ main {
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-left: -4rem;
-  background-color: #4f1121;
+  background-color: var(--dark-accent);
   padding: 25px 40px;
+  color: var(--light-grey);
 }
 
 .projects .projects-wrapper .project-box .project-text .skills-used {
@@ -493,6 +505,69 @@ main {
   fill: var(--accent-color);
 }
 
+.contact-page {
+  padding-bottom: 100px;
+}
+
+.contact-page h2 {
+  color: var(--accent-color);
+}
+
+.contact-page form {
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1000px;
+  margin: 1.5rem auto;
+}
+
+.contact-page form input[type="text"],
+.contact-page form input[type="email"],
+.contact-page form textarea {
+  margin-bottom: 1rem;
+  font-family: var(--sans-serif-font);
+  padding: 15px;
+  background-color: var(--bg-color);
+  border: 1px solid var(--accent-color);
+  color: var(--light-color);
+  font-size: 1rem;
+}
+
+.contact-page form input[type="text"]:focus-visible,
+.contact-page form input[type="email"]:focus-visible,
+.contact-page form textarea:focus-visible {
+  outline: 2px solid var(--accent-color);
+}
+
+.contact-page form .submit-btn {
+  display: inline-block;
+  width: 100px;
+  background-color: #ff1e565b;
+  font-family: var(--serif-font);
+  padding: 10px 20px;
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 5px;
+  -webkit-transition: all ease-in 0.1s;
+  transition: all ease-in 0.1s;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-page form .submit-btn:hover {
+  background-color: transparent;
+  color: var(--light-color);
+}
+
+footer {
+  display: none;
+}
+
 @media only screen and (max-width: 1200px) {
   .projects .projects-wrapper .grid {
     -ms-grid-columns: 1fr;
@@ -501,6 +576,15 @@ main {
   .projects .projects-wrapper .project-box {
     gap: 0;
   }
+  .projects .projects-wrapper .project-box .left-side.project-text {
+    margin: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .projects .projects-wrapper .project-box .left-side.project-text p {
+    margin-left: 0;
+  }
   .projects .projects-wrapper .project-box .project-img {
     min-height: auto;
     max-height: 250px;
@@ -508,7 +592,7 @@ main {
        object-fit: cover;
   }
   .projects .projects-wrapper .project-box .project-text {
-    background-color: #4f1121;
+    background-color: var(--dark-accent);
     padding: 20px 30px;
   }
   .projects .projects-wrapper .project-box .project-text h3 {
@@ -520,6 +604,55 @@ main {
   }
   .skills .skills-wrapper {
     gap: 40px;
+  }
+  .about-me {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .about-me .img-overlay {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 50%;
+  }
+  .about-me .about-me-text {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .contact-mail,
+  .social-links {
+    display: none;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 200px;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: var(--sans-serif-font);
+    gap: 10px;
+  }
+  footer a {
+    color: var(--light-grey);
+    -webkit-transition: all ease-in 0.2s;
+    transition: all ease-in 0.2s;
+  }
+  footer a:hover {
+    color: var(--accent-color);
+  }
+  footer .footer-social-links a {
+    margin: 0 5px;
+  }
+  footer .footer-contact-mail a {
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
   }
 }
 
