@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <title>My Portfolio</title>
   </head>
   <body>
     <!--!NAVBAR  -->
-    <div class="navbar">
+    <div class="navbar flex">
       <a href="#"><img src="images/logo.svg" alt="" /></a>
       <nav>
         <a href="#home">Home</a>
@@ -23,35 +23,35 @@
       </nav>
     </div>
 
-    <!-- !LEFT SIDE SOCIAL LINKS -->
-    <div class="social-links">
-      <a href="https://www.github.com" target="_blank">
-        <i class="bx bxl-github bx-sm"></i>
-      </a>
-      <a href="https://www.twitter.com" target="_blank">
-        <i class="bx bxl-twitter bx-sm"></i>
-      </a>
-      <a href="https://www.linkedin.com" target="_blank">
-        <i class="bx bxl-linkedin-square bx-sm"></i>
-      </a>
-      <div class="line"></div>
+    <div class="side-menu">
+      <!-- !LEFT SIDE SOCIAL LINKS -->
+      <div class="social-links flex">
+        <a href="https://www.github.com" target="_blank">
+          <i class="bx bxl-github bx-sm"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <i class="bx bxl-twitter bx-sm"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <i class="bx bxl-linkedin-square bx-sm"></i>
+        </a>
+        <div class="line"></div>
+      </div>
+      <!-- !RIGHT SIDE MAIL LINK -->
+      <div class="contact-mail flex">
+        <a href="mailto:alexbenny2811@gmail.com">alexbenny2811@gmail.com</a>
+        <div class="line"></div>
+      </div>
     </div>
 
-    <!-- !RIGHT SIDE MAIL LINK -->
-    <div class="contact-mail">
-      <a href="mailto:alexbenny2811@gmail.com">alexbenny2811@gmail.com</a>
-      <div class="line"></div>
-    </div>
-
-    <!-- !SCROLLABLE MAIN PAGE -->
     <main>
       <!-- !HOME HERO PAGE -->
-      <section class="hero" id="home">
+      <section class="hero flex" id="home">
         <div class="text">
-          <p class="hi">Hi, my name is</p>
-          <h1 class="name">Alex Benny.</h1>
-          <h1 class="build-websites">I build cool websites.</h1>
-          <p class="desc">
+          <p class="hi text-white">Hi, my name is</p>
+          <h1 class="text-accent">Alex Benny.</h1>
+          <h1 class="text-grey">I build cool websites.</h1>
+          <p class="desc text-grey">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus
             sit amet dictum sit. Phasellus egestas tellus rutrum tellus
@@ -64,14 +64,14 @@
 
       <!-- !ABOUT ME -->
       <section class="about-me grid grid-3" id="about">
-        <div class="img-overlay">
+        <div class="img-overlay flex">
           <img class="profile-img" src="images/profile-img.jpg" alt="" />
         </div>
         <div class="about-me-text">
-          <h2>About Me</h2>
+          <h2 class="text-accent">About Me</h2>
           <div class="h-line"></div>
           <div class="para-text">
-            <p>
+            <p class="text-white">
               Lorem ipsum dolor sit amet consectetur
               <span>adipisicing elit</span>. Fugiat aliquid eos dolores sint
               expedita qui corporis consequuntur earum, quasi explicabo aliquam
@@ -95,7 +95,7 @@
 
       <!-- !SKILLS -->
       <section class="skills">
-        <h2>Skills</h2>
+        <h2 class="text-accent">Skills</h2>
         <div class="h-line"></div>
         <div class="skills-wrapper flex">
           <div class="card flex"><img src="images/html.svg" alt="" /></div>
@@ -112,10 +112,9 @@
           <div class="card flex"><img src="images/photoshop.svg" alt="" /></div>
         </div>
       </section>
-
       <!-- !PROJECTS -->
       <section id="projects" class="projects">
-        <h2>Projects</h2>
+        <h2 class="text-accent">Projects</h2>
         <div class="h-line"></div>
         <div class="projects-wrapper flex">
           <div class="project-box grid">
@@ -139,47 +138,10 @@
               </ul>
               <div class="project-links flex">
                 <a href="#" class="btn project-btn github-btn">
-                  <svg
-                    version="1.1"
-                    id="Layer_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px"
-                    y="0px"
-                    viewBox="0 0 24 24"
-                    style="enable-background: new 0 0 24 24"
-                    xml:space="preserve"
-                  >
-                    <path
-                      d="M16.3,23.5c-0.6,0-1-0.4-1-1v-3.9c0.1-0.8-0.2-1.4-0.7-1.9c-0.3-0.3-0.4-0.7-0.2-1c0.1-0.4,0.5-0.6,0.8-0.7
-	c2.9-0.3,5.6-1.3,5.6-6c0-1.1-0.4-2.2-1.2-3.1c-0.3-0.3-0.3-0.7-0.2-1c0.3-0.8,0.3-1.6,0.1-2.4C19,2.6,18.1,3,16.8,3.8
-	C16.6,4,16.3,4,16,4c-2.1-0.6-4.4-0.6-6.5,0C9.2,4,8.9,4,8.7,3.8C7.4,3,6.5,2.7,6,2.5C5.9,3.3,5.9,4.2,6.2,4.9C6.3,5.3,6.2,5.7,6,6
-	C5.2,6.8,4.7,7.9,4.8,9.1c0,4.7,2.7,5.7,5.6,6c0.4,0,0.7,0.3,0.8,0.7c0.1,0.4,0,0.8-0.2,1c-0.5,0.5-0.7,1.1-0.7,1.8l0,0.9
-	c0,0,0,0.1,0,0.1l0,2.9c0,0.6-0.4,1-1,1s-1-0.4-1-1v-1.7c-3,0.5-4.3-1.2-5.2-2.3c-0.4-0.5-0.7-0.9-1.1-1c-0.5-0.1-0.9-0.7-0.7-1.2
-	c0.1-0.5,0.7-0.9,1.2-0.7c1,0.3,1.6,1,2.2,1.7c0.8,1.1,1.5,1.9,3.6,1.5v-0.1c0-0.6,0.1-1.3,0.3-1.8c-2.8-0.6-5.8-2.4-5.8-7.7
-	c0-1.5,0.5-2.9,1.4-4C3.8,3.7,3.9,2.4,4.4,1.1c0.1-0.3,0.3-0.5,0.6-0.6c0.4-0.1,1.7-0.3,4.4,1.4c2.2-0.5,4.5-0.5,6.6,0
-	c2.6-1.7,4-1.5,4.4-1.4c0.3,0.1,0.5,0.3,0.6,0.6c0.5,1.3,0.6,2.6,0.3,3.9c0.9,1.1,1.4,2.5,1.4,4c0,5.7-3.4,7.2-5.8,7.8
-	c0.2,0.6,0.3,1.3,0.3,1.9l0,3.8C17.3,23.1,16.8,23.5,16.3,23.5z"
-                    />
-                  </svg>
+                  <img src="images/viewcode.svg" alt="" />
                 </a>
                 <a href="#" class="btn project-btn live-btn">
-                  <svg
-                    version="1.1"
-                    id="Layer_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px"
-                    y="0px"
-                    viewBox="0 0 24 24"
-                    style="enable-background: new 0 0 24 24"
-                    xml:space="preserve"
-                  >
-                    <path
-                      d="M19.8,11.4c-0.1-0.1-0.2-0.2-0.2-0.2l-13-9C6.1,1.9,5.5,2,5.2,2.4C5.1,2.6,5,2.8,5,3v18c0,0.4,0.2,0.7,0.5,0.9
-	c0.3,0.2,0.7,0.1,1-0.1l13-9C20,12.5,20.1,11.9,19.8,11.4z M7,19.1V4.9L17.2,12L7,19.1z"
-                    />
-                  </svg>
+                  <img src="images/view-live.svg" alt="" />
                 </a>
               </div>
             </div>
@@ -206,47 +168,10 @@
               </ul>
               <div class="project-links flex">
                 <a href="#" class="btn project-btn github-btn">
-                  <svg
-                    version="1.1"
-                    id="Layer_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px"
-                    y="0px"
-                    viewBox="0 0 24 24"
-                    style="enable-background: new 0 0 24 24"
-                    xml:space="preserve"
-                  >
-                    <path
-                      d="M16.3,23.5c-0.6,0-1-0.4-1-1v-3.9c0.1-0.8-0.2-1.4-0.7-1.9c-0.3-0.3-0.4-0.7-0.2-1c0.1-0.4,0.5-0.6,0.8-0.7
-	c2.9-0.3,5.6-1.3,5.6-6c0-1.1-0.4-2.2-1.2-3.1c-0.3-0.3-0.3-0.7-0.2-1c0.3-0.8,0.3-1.6,0.1-2.4C19,2.6,18.1,3,16.8,3.8
-	C16.6,4,16.3,4,16,4c-2.1-0.6-4.4-0.6-6.5,0C9.2,4,8.9,4,8.7,3.8C7.4,3,6.5,2.7,6,2.5C5.9,3.3,5.9,4.2,6.2,4.9C6.3,5.3,6.2,5.7,6,6
-	C5.2,6.8,4.7,7.9,4.8,9.1c0,4.7,2.7,5.7,5.6,6c0.4,0,0.7,0.3,0.8,0.7c0.1,0.4,0,0.8-0.2,1c-0.5,0.5-0.7,1.1-0.7,1.8l0,0.9
-	c0,0,0,0.1,0,0.1l0,2.9c0,0.6-0.4,1-1,1s-1-0.4-1-1v-1.7c-3,0.5-4.3-1.2-5.2-2.3c-0.4-0.5-0.7-0.9-1.1-1c-0.5-0.1-0.9-0.7-0.7-1.2
-	c0.1-0.5,0.7-0.9,1.2-0.7c1,0.3,1.6,1,2.2,1.7c0.8,1.1,1.5,1.9,3.6,1.5v-0.1c0-0.6,0.1-1.3,0.3-1.8c-2.8-0.6-5.8-2.4-5.8-7.7
-	c0-1.5,0.5-2.9,1.4-4C3.8,3.7,3.9,2.4,4.4,1.1c0.1-0.3,0.3-0.5,0.6-0.6c0.4-0.1,1.7-0.3,4.4,1.4c2.2-0.5,4.5-0.5,6.6,0
-	c2.6-1.7,4-1.5,4.4-1.4c0.3,0.1,0.5,0.3,0.6,0.6c0.5,1.3,0.6,2.6,0.3,3.9c0.9,1.1,1.4,2.5,1.4,4c0,5.7-3.4,7.2-5.8,7.8
-	c0.2,0.6,0.3,1.3,0.3,1.9l0,3.8C17.3,23.1,16.8,23.5,16.3,23.5z"
-                    />
-                  </svg>
+                  <img src="images/viewcode.svg" alt="" />
                 </a>
                 <a href="#" class="btn project-btn live-btn">
-                  <svg
-                    version="1.1"
-                    id="Layer_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px"
-                    y="0px"
-                    viewBox="0 0 24 24"
-                    style="enable-background: new 0 0 24 24"
-                    xml:space="preserve"
-                  >
-                    <path
-                      d="M19.8,11.4c-0.1-0.1-0.2-0.2-0.2-0.2l-13-9C6.1,1.9,5.5,2,5.2,2.4C5.1,2.6,5,2.8,5,3v18c0,0.4,0.2,0.7,0.5,0.9
-	c0.3,0.2,0.7,0.1,1-0.1l13-9C20,12.5,20.1,11.9,19.8,11.4z M7,19.1V4.9L17.2,12L7,19.1z"
-                    />
-                  </svg>
+                  <img src="images/view-live.svg" alt="" />
                 </a>
               </div>
             </div>
@@ -255,8 +180,9 @@
         </div>
       </section>
 
+      <!-- !CONTACT -->
       <section id="contact" class="contact-page">
-        <h2>Get In Touch</h2>
+        <h2 class="text-accent">Get In Touch</h2>
         <div class="h-line"></div>
         <form>
           <input
@@ -295,23 +221,5 @@
         </form>
       </section>
     </main>
-
-    <!-- !FOOTER -->
-    <footer class="flex">
-      <div class="footer-social-links">
-        <a href="https://www.github.com" target="_blank">
-          <i class="bx bxl-github bx-md"></i>
-        </a>
-        <a href="https://www.twitter.com" target="_blank">
-          <i class="bx bxl-twitter bx-md"></i>
-        </a>
-        <a href="https://www.linkedin.com" target="_blank">
-          <i class="bx bxl-linkedin-square bx-md"></i>
-        </a>
-      </div>
-      <div class="footer-contact-mail">
-        <a href="mailto:alexbenny2811@gmail.com">alexbenny2811@gmail.com</a>
-      </div>
-    </footer>
   </body>
 </html>
