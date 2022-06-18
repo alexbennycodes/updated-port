@@ -9,11 +9,13 @@
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>My Portfolio</title>
   </head>
   <body>
     <!--!NAVBAR  -->
-    <div class="navbar flex">
+    <div class="navbar flex" data-aos-duration="1000"
+    data-aos="fade-down">
       <a href="#"><img src="images/logo.svg" alt="" /></a>
       <nav>
         <a href="#home">Home</a>
@@ -24,20 +26,34 @@
     </div>
 
     <!-- !LEFT SIDE SOCIAL LINKS -->
-    <div class="social-links flex">
-      <a href="https://www.github.com" target="_blank">
+    <div class="social-links flex" data-aos-duration="1000"
+    data-aos="fade-up">
+      <a
+        href="https://www.github.com"
+        target="_blank"
+        
+      >
         <i class="bx bxl-github bx-sm"></i>
       </a>
-      <a href="https://www.twitter.com" target="_blank">
+      <a
+        href="https://www.twitter.com"
+        target="_blank"
+       
+      >
         <i class="bx bxl-twitter bx-sm"></i>
       </a>
-      <a href="https://www.linkedin.com" target="_blank">
+      <a
+        href="https://www.linkedin.com"
+        target="_blank"
+        
+      >
         <i class="bx bxl-linkedin-square bx-sm"></i>
       </a>
       <div class="line"></div>
     </div>
     <!-- !RIGHT SIDE MAIL LINK -->
-    <div class="contact-mail flex">
+    <div class="contact-mail flex" data-aos-duration="1000"
+    data-aos="fade-up">
       <a href="mailto:alexbenny2811@gmail.com">alexbenny2811@gmail.com</a>
       <div class="line"></div>
     </div>
@@ -45,7 +61,7 @@
     <main>
       <!-- !HOME HERO PAGE -->
       <section class="hero flex" id="home">
-        <div class="text">
+        <div class="text" data-aos="zoom-in" data-aos-duration="1000">
           <p class="hi text-white">Hi, my name is</p>
           <h1 class="text-accent">Alex Benny.</h1>
           <h1 class="text-grey">I build cool websites.</h1>
@@ -56,7 +72,7 @@
             pellentesque. Et odio pellentesque diam volutpat commodo sed egestas
             egestas fringilla.
           </p>
-          <a href="#" class="contact-me">Contact Me</a>
+          <a href="#" class="contact-me btn">Contact Me</a>
         </div>
       </section>
 
@@ -65,9 +81,12 @@
         <div class="img-overlay flex">
           <img class="profile-img" src="images/profile-img.jpg" alt="" />
         </div>
-        <div class="about-me-text">
+        <div
+          class="about-me-text"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
           <h2 class="text-accent">About Me</h2>
-          <div class="h-line"></div>
           <div class="para-text">
             <p class="text-white">
               Lorem ipsum dolor sit amet consectetur
@@ -93,9 +112,18 @@
 
       <!-- !SKILLS -->
       <section class="skills">
-        <h2 class="text-accent">Skills</h2>
-        <div class="h-line"></div>
-        <div class="skills-wrapper flex">
+        <h2
+          class="text-accent text-center"
+          data-aos-duration="1000"
+          data-aos="fade-down"
+        >
+          Skills
+        </h2>
+        <div
+          class="skills-wrapper flex"
+          data-aos-duration="1000"
+          data-aos="fade-up"
+        >
           <div class="card flex"><img src="images/html.svg" alt="" /></div>
           <div class="card flex"><img src="images/css.svg" alt="" /></div>
           <div class="card flex"><img src="images/js.svg" alt="" /></div>
@@ -110,79 +138,93 @@
           <div class="card flex"><img src="images/photoshop.svg" alt="" /></div>
         </div>
       </section>
+
       <!-- !PROJECTS -->
-      <section id="projects" class="projects">
-        <h2 class="text-accent">Projects</h2>
-        <div class="h-line"></div>
+      <section class="projects">
+        <h2
+          class="text-accent text-center"
+          data-aos-duration="1000"
+          data-aos="fade-down"
+        >
+          Projects
+        </h2>
         <div class="projects-wrapper flex">
-          <div class="project-box grid">
-            <img class="project-img" src="images/project1.jpeg" alt="" />
+          <div
+            class="project-box"
+            data-aos-duration="1200"
+            data-aos="fade-right"
+          >
+            <img src="images/project1.jpeg" alt="" class="project-img" />
             <div class="project-text">
-              <h3>Project Name</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
-                tempore harum, reiciendis numquam ad iusto expedita aliquid sunt
-                non adipisci quod illo doloribus rem labore sint voluptatem!
-                Ipsa, iusto quibusdam. Lorem ipsum dolor sit, amet consectetur
-                adipisicing elit. Aliquam mollitia saepe eaque quis blanditiis
-                sapiente earum voluptas, debitis deserunt dolorum qui amet velit
-                distinctio, animi atque, fuga repellat corporis quidem.
+              <h3 class="text-accent">Project Name</h3>
+              <p class="text-white">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Pariatur adipisci error culpa fuga, architecto illo eos! Aut
+                asperiores at officiis vel, quasi veniam minus ad natus error ab
+                <span>illum</span> dicta, sed placeat doloribus? Qui iste
+                inventore voluptatum provident dolore quos nulla a
+                <span>explicabo voluptates</span> perspiciatis similique,
+                reiciendis vitae sed harum?
               </p>
-              <ul class="skills-used flex">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+              <ul class="project-tech-used">
                 <li>Bootstrap</li>
+                <li>Tailwind</li>
+                <li>React</li>
+                <li>Javascript</li>
               </ul>
-              <div class="project-links flex">
-                <a href="#" class="btn project-btn github-btn">
-                  <img src="images/viewcode.svg" alt="" />
-                </a>
-                <a href="#" class="btn project-btn live-btn">
-                  <img src="images/view-live.svg" alt="" />
-                </a>
+              <div class="project-links">
+                <a href="/" class="btn project-btn">Live</a>
+                <a href="/" class="btn project-btn">Code</a>
               </div>
             </div>
           </div>
-        </div>
-        <div class="projects-wrapper flex">
-          <div class="project-box grid">
-            <div class="project-text left-side">
-              <h3>Project Name</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
-                tempore harum, reiciendis numquam ad iusto expedita aliquid sunt
-                non adipisci quod illo doloribus rem labore sint voluptatem!
-                Ipsa, iusto quibusdam. Lorem ipsum dolor sit, amet consectetur
-                adipisicing elit. Aliquam mollitia saepe eaque quis blanditiis
-                sapiente earum voluptas, debitis deserunt dolorum qui amet velit
-                distinctio, animi atque, fuga repellat corporis quidem.
+          <div
+            class="project-box"
+            data-aos-duration="1200"
+            data-aos="fade-left"
+          >
+            <img src="images/project1.jpeg" alt="" class="project-img" />
+            <div class="project-text">
+              <h3 class="text-accent">Project Name</h3>
+              <p class="text-white">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Pariatur adipisci error culpa fuga, architecto illo eos! Aut
+                asperiores at officiis vel, quasi veniam minus ad natus error ab
+                <span>illum</span> dicta, sed placeat doloribus? Qui iste
+                inventore voluptatum provident dolore quos nulla a
+                <span>explicabo voluptates</span> perspiciatis similique,
+                reiciendis vitae sed harum?
               </p>
-              <ul class="skills-used flex">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+              <ul class="project-tech-used">
                 <li>Bootstrap</li>
+                <li>Tailwind</li>
+                <li>React</li>
+                <li>Javascript</li>
               </ul>
-              <div class="project-links flex">
-                <a href="#" class="btn project-btn github-btn">
-                  <img src="images/viewcode.svg" alt="" />
-                </a>
-                <a href="#" class="btn project-btn live-btn">
-                  <img src="images/view-live.svg" alt="" />
-                </a>
+              <div class="project-links">
+                <a href="/" class="btn project-btn">Live</a>
+                <a href="/" class="btn project-btn">Code</a>
               </div>
             </div>
-            <img class="project-img" src="images/project1.jpeg" alt="" />
           </div>
         </div>
       </section>
 
       <!-- !CONTACT -->
       <section id="contact" class="contact-page">
-        <h2 class="text-accent">Get In Touch</h2>
-        <div class="h-line"></div>
-        <form>
+        <h2
+          class="text-accent text-center"
+          data-aos-duration="1000"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+        >
+          Get In Touch
+        </h2>
+        <form
+          data-aos-duration="1000"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+        >
           <input
             type="text"
             name="name"
@@ -215,10 +257,12 @@
             placeholder="Your Message*"
             required
           ></textarea>
-          <input type="submit" value="Submit" class="submit-btn" />
+          <input type="submit" value="Submit" class="btn submit-btn"
         </form>
       </section>
     </main>
+
+    <!-- !FOOTER -->
     <footer class="flex">
       <div class="footer-links flex">
         <div class="footer-social-links flex">
@@ -238,9 +282,11 @@
           >
         </div>
       </div>
-      <div class="footer-copyright">
-        <p class="text-white">2022 &copy; COPYRIGHT ALEX BENNY</p>
-      </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
