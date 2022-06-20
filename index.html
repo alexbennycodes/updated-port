@@ -9,12 +9,11 @@
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>My Portfolio</title>
   </head>
   <body>
     <!--!NAVBAR  -->
-    <div class="navbar flex" data-aos-duration="1000" data-aos="fade-down">
+    <div class="navbar flex">
       <a href="#"><img src="images/logo.svg" alt="" /></a>
       <nav>
         <a href="#home">Home</a>
@@ -38,7 +37,7 @@
     </div>
 
     <!-- !LEFT SIDE SOCIAL LINKS -->
-    <div class="social-links flex" data-aos-duration="1000" data-aos="fade-up">
+    <div class="social-links flex">
       <a href="https://github.com/alexbennycodes" target="_blank">
         <i class="bx bxl-github bx-sm"></i>
       </a>
@@ -51,7 +50,7 @@
       <div class="line"></div>
     </div>
     <!-- !RIGHT SIDE MAIL LINK -->
-    <div class="contact-mail flex" data-aos-duration="1000" data-aos="fade-up">
+    <div class="contact-mail flex">
       <a href="mailto:alexbenny2811@gmail.com">alexbenny2811@gmail.com</a>
       <div class="line"></div>
     </div>
@@ -59,7 +58,7 @@
     <main>
       <!-- !HOME HERO PAGE -->
       <section class="hero flex" id="home">
-        <div class="text" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="text">
           <p class="hi text-white">Hi, my name is</p>
           <h1 class="text-accent">Alex Benny.</h1>
           <h1 class="text-grey">I build cool websites.</h1>
@@ -74,19 +73,9 @@
       <!-- !ABOUT ME -->
       <section class="about-me grid grid-3" id="about">
         <div class="img-overlay flex">
-          <img
-            class="profile-img"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            src="images/profile-img.jpg"
-            alt=""
-          />
+          <img class="profile-img" src="images/profile-img.jpg" alt="" />
         </div>
-        <div
-          class="about-me-text"
-          data-aos="fade-left"
-          data-aos-duration="1000"
-        >
+        <div class="about-me-text">
           <h2 class="text-accent">About Me</h2>
           <div class="para-text">
             <p class="text-white">
@@ -113,18 +102,8 @@
 
       <!-- !SKILLS -->
       <section class="skills">
-        <h2
-          class="text-accent text-center"
-          data-aos-duration="1000"
-          data-aos="fade-down"
-        >
-          Skills
-        </h2>
-        <div
-          class="skills-wrapper flex"
-          data-aos-duration="1000"
-          data-aos="fade-up"
-        >
+        <h2 class="text-accent text-center">Skills</h2>
+        <div class="skills-wrapper flex">
           <div class="card flex"><img src="images/html.svg" alt="" /></div>
           <div class="card flex"><img src="images/css.svg" alt="" /></div>
           <div class="card flex"><img src="images/js.svg" alt="" /></div>
@@ -142,19 +121,9 @@
 
       <!-- !PROJECTS -->
       <section class="projects" id="projects">
-        <h2
-          class="text-accent text-center"
-          data-aos-duration="1000"
-          data-aos="fade-down"
-        >
-          Projects
-        </h2>
+        <h2 class="text-accent text-center">Projects</h2>
         <div class="projects-wrapper flex">
-          <div
-            class="project-box"
-            data-aos-duration="1200"
-            data-aos="fade-right"
-          >
+          <div class="project-box">
             <img src="images/project1.jpeg" alt="" class="project-img" />
             <div class="project-text">
               <h3 class="text-accent">Wordle Clone</h3>
@@ -186,11 +155,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="project-box"
-            data-aos-duration="1200"
-            data-aos="fade-left"
-          >
+          <div class="project-box">
             <img src="images/project2.png" alt="" class="project-img" />
             <div class="project-text">
               <h3 class="text-accent">World Almanac</h3>
@@ -227,19 +192,8 @@
 
       <!-- !CONTACT -->
       <section id="contact" class="contact-page">
-        <h2
-          class="text-accent text-center"
-          data-aos-duration="1000"
-          data-aos="fade-down"
-          data-aos-easing="linear"
-        >
-          Get In Touch
-        </h2>
-        <form
-          data-aos-duration="1000"
-          data-aos="fade-up"
-          data-aos-easing="linear"
-        >
+        <h2 class="text-accent text-center">Get In Touch</h2>
+        <form>
           <input
             type="text"
             name="name"
@@ -279,15 +233,15 @@
 
     <!-- !FOOTER -->
     <footer class="flex">
-      <div class="footer-links flex" data-aos="fade" data-aos-duration="1000">
+      <div class="footer-links flex">
         <div class="footer-social-links flex">
-          <a href="https://www.github.com" target="_blank">
+          <a href="https://www.github.com/alexbennycodes" target="_blank">
             <i class="bx bxl-github bx-sm"></i>
           </a>
-          <a href="https://www.twitter.com" target="_blank">
+          <a href="https://www.twitter.com/alexbennytwts" target="_blank">
             <i class="bx bxl-twitter bx-sm"></i>
           </a>
-          <a href="https://www.linkedin.com" target="_blank">
+          <a href="https://www.linkedin.com/alex-benny28" target="_blank">
             <i class="bx bxl-linkedin-square bx-sm"></i>
           </a>
         </div>
@@ -298,10 +252,5 @@
         </div>
       </div>
     </footer>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>
