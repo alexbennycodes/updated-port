@@ -84,6 +84,10 @@ ul {
   gap: 20px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .grid-3 {
   grid-template-columns: repeat(3, 1fr);
 }
@@ -407,6 +411,7 @@ footer {
     justify-content: space-between;
     // justify-content: center;
     flex-wrap: wrap;
+    overflow: hidden;
     gap: 20px;
     .project-box {
       width: 45%;
@@ -486,6 +491,13 @@ $medium: 900px;
       padding: 0;
       .card {
         min-width: 60px;
+      }
+    }
+  }
+  .projects {
+    .projects-wrapper {
+      .project-box {
+        width: 100%;
       }
     }
   }

@@ -90,6 +90,10 @@ ul {
   gap: 20px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .grid-3 {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
@@ -476,6 +480,7 @@ footer .footer-links .footer-contact-mail a:hover {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  overflow: hidden;
   gap: 20px;
 }
 
@@ -552,6 +557,9 @@ footer .footer-links .footer-contact-mail a:hover {
   }
   .skills .skills-wrapper .card {
     min-width: 60px;
+  }
+  .projects .projects-wrapper .project-box {
+    width: 100%;
   }
 }
 
