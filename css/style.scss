@@ -362,10 +362,6 @@ main {
   color: var(--bg-color);
 }
 
-.menu__item:checked ~ .menu__box {
-  visibility: hidden;
-}
-
 // !SKILLS
 .skills {
   min-height: 400px;
@@ -558,6 +554,9 @@ $medium: 900px;
   }
 }
 @media screen and (max-width: $small) {
+  main {
+    padding: 0;
+  }
   .navbar {
     nav {
       display: none;
@@ -566,18 +565,16 @@ $medium: 900px;
   .hamburger-menu {
     display: block;
   }
-  main {
-    padding: 0 25px;
-  }
 
   .about-me {
+    padding: 200px 25px 200px 25px;
     .about-me-text {
       text-align: center;
     }
   }
   .skills {
     .skills-wrapper {
-      padding: 0;
+      padding: 0 25px;
       .card {
         min-width: 60px;
       }
@@ -587,6 +584,20 @@ $medium: 900px;
     .projects-wrapper {
       .project-box {
         width: 100%;
+        .project-text {
+          padding: 1.25rem;
+          p,
+          ul li {
+            font-size: 0.8rem;
+          }
+
+          .project-btn {
+            margin-top: 0.5rem;
+          }
+        }
+        .project-text > *:not(:last-child) {
+          margin-bottom: 0.5rem;
+        }
       }
     }
   }
@@ -600,8 +611,9 @@ $medium: 900px;
       .project-box {
         min-width: 80%;
         img {
-          // aspect-ratio: 16/9;
-          height: 350px;
+          aspect-ratio: 16/9;
+          max-height: 350px;
+          min-height: 200px;
           object-fit: cover;
         }
       }

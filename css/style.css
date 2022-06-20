@@ -404,10 +404,6 @@ main {
   color: var(--bg-color);
 }
 
-.menu__item:checked ~ .menu__box {
-  visibility: hidden;
-}
-
 .skills {
   min-height: 400px;
   padding-bottom: 100px;
@@ -633,26 +629,42 @@ footer .footer-links .footer-contact-mail a:hover {
 }
 
 @media screen and (max-width: 500px) {
+  main {
+    padding: 0;
+  }
   .navbar nav {
     display: none;
   }
   .hamburger-menu {
     display: block;
   }
-  main {
-    padding: 0 25px;
+  .about-me {
+    padding: 200px 25px 200px 25px;
   }
   .about-me .about-me-text {
     text-align: center;
   }
   .skills .skills-wrapper {
-    padding: 0;
+    padding: 0 25px;
   }
   .skills .skills-wrapper .card {
     min-width: 60px;
   }
   .projects .projects-wrapper .project-box {
     width: 100%;
+  }
+  .projects .projects-wrapper .project-box .project-text {
+    padding: 1.25rem;
+  }
+  .projects .projects-wrapper .project-box .project-text p,
+  .projects .projects-wrapper .project-box .project-text ul li {
+    font-size: 0.8rem;
+  }
+  .projects .projects-wrapper .project-box .project-text .project-btn {
+    margin-top: 0.5rem;
+  }
+  .projects .projects-wrapper .project-box .project-text > *:not(:last-child) {
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -666,7 +678,9 @@ footer .footer-links .footer-contact-mail a:hover {
     min-width: 80%;
   }
   .projects .projects-wrapper .project-box img {
-    height: 350px;
+    aspect-ratio: 16/9;
+    max-height: 350px;
+    min-height: 200px;
     -o-object-fit: cover;
        object-fit: cover;
   }
