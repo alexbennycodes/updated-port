@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style Sheet -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Box Icons -->
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <!-- Scroll Reveal JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>My Portfolio</title>
   </head>
   <body>
@@ -123,7 +129,7 @@
       <section class="projects" id="projects">
         <h2 class="text-accent text-center">Projects</h2>
         <div class="projects-wrapper flex">
-          <div class="project-box">
+          <div class="project-box left-box">
             <img src="images/project1.jpeg" alt="" class="project-img" />
             <div class="project-text">
               <h3 class="text-accent">Wordle Clone</h3>
@@ -152,7 +158,7 @@
               </div>
             </div>
           </div>
-          <div class="project-box">
+          <div class="project-box right-box">
             <img src="images/project2.png" alt="" class="project-img" />
             <div class="project-text">
               <h3 class="text-accent">World Almanac</h3>
@@ -182,7 +188,7 @@
               </div>
             </div>
           </div>
-          <div class="project-box">
+          <div class="project-box left-box">
             <img src="images/project3.png" alt="" class="project-img" />
             <div class="project-text">
               <h3 class="text-accent">Blockchain Tech Landing Page</h3>
@@ -217,16 +223,9 @@
         <h2 class="text-accent text-center">Get In Touch</h2>
         <form
           id="contact-form"
-          action="https://formspree.io/alexbenny2811@gmail.com"
+          action="https://formsubmit.co/alexbenny2811@gmail.com"
           method="POST"
         >
-          <input
-            name="_redirect"
-            type="hidden"
-            id="name"
-            value="https://www.google.com"
-          />
-
           <input
             type="text"
             name="name"
@@ -259,7 +258,7 @@
             placeholder="Your Message*"
             required
           ></textarea>
-          <input type="submit" value="Submit" class="btn submit-btn"
+          <input type="submit" value="Submit" class="btn submit-btn" />
         </form>
       </section>
     </main>
@@ -285,5 +284,51 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      ScrollReveal({
+        reset: true,
+        distance: "60px",
+        duration: 1000,
+        delay: 400,
+      });
+      ScrollReveal().reveal(".navbar, h2", {
+        delay: 100,
+        origin: "top",
+        easing: "ease-in",
+      });
+      ScrollReveal().reveal(".hero", {
+        delay: 200,
+        scale: 0.5,
+        easing: "ease-in",
+      });
+      ScrollReveal().reveal(".about-me-text", {
+        delay: 200,
+        origin: "right",
+        easing: "ease-in",
+      });
+      ScrollReveal().reveal(".profile-img, .left-box", {
+        delay: 400,
+        origin: "left",
+        easing: "ease-in",
+      });
+      ScrollReveal().reveal(".skills-wrapper .card", {
+        delay: 300,
+        origin: "bottom",
+        interval: 100,
+      });
+      ScrollReveal().reveal(".right-box", {
+        delay: 300,
+        origin: "right",
+        easing: "ease-in",
+      });
+      ScrollReveal().reveal("input, textarea", {
+        delay: 300,
+        origin: "top",
+        interval: 100,
+        easing: "ease-in",
+      });
+      ScrollReveal().reveal("footer", { opacity: 0, easing: "ease-in" });
+    </script>
   </body>
 </html>
