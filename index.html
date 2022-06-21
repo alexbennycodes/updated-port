@@ -66,7 +66,7 @@
             I'm a self-taught frontend developer that likes building beautiful
             websites with a strong focus on user interface.
           </p>
-          <a href="#" class="contact-me btn">Contact Me</a>
+          <a href="#contact" class="contact-me btn">Contact Me</a>
         </div>
       </section>
 
@@ -128,13 +128,10 @@
             <div class="project-text">
               <h3 class="text-accent">Wordle Clone</h3>
               <p class="text-white">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Pariatur adipisci error culpa fuga, architecto illo eos! Aut
-                asperiores at officiis vel, quasi veniam minus ad natus error ab
-                <span>illum</span> dicta, sed placeat doloribus? Qui iste
-                inventore voluptatum provident dolore quos nulla a
-                <span>explicabo voluptates</span> perspiciatis similique,
-                reiciendis vitae sed harum?
+                A clone of the popular Wordle Game with the added feature of
+                unlimited play without a daily restriction. It's also
+                responsive, so you can play it on both your smartphone and your
+                PC. Give it a go and let me know what you think.
               </p>
               <ul class="project-tech-used">
                 <li>HTML</li>
@@ -160,13 +157,11 @@
             <div class="project-text">
               <h3 class="text-accent">World Almanac</h3>
               <p class="text-white">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Pariatur adipisci error culpa fuga, architecto illo eos! Aut
-                asperiores at officiis vel, quasi veniam minus ad natus error ab
-                <span>illum</span> dicta, sed placeat doloribus? Qui iste
-                inventore voluptatum provident dolore quos nulla a
-                <span>explicabo voluptates</span> perspiciatis similique,
-                reiciendis vitae sed harum?
+                World Almanac is an application that allows you to view detailed
+                information about all of the countries in the world. You may
+                also filter by area and use the search option to locate the
+                nation you're searching for. The relevant data is retrieved via
+                the Rest Countries API.
               </p>
               <ul class="project-tech-used">
                 <li>Bootstrap</li>
@@ -187,13 +182,51 @@
               </div>
             </div>
           </div>
+          <div class="project-box">
+            <img src="images/project3.png" alt="" class="project-img" />
+            <div class="project-text">
+              <h3 class="text-accent">Blockchain Tech Landing Page</h3>
+              <p class="text-white">
+                This is a landing page for a Blockchain Technology firm that was
+                created with Tailwind CSS and a few animations to make it more
+                attractive. It tablet and mobile responsive as well.
+              </p>
+              <ul class="project-tech-used">
+                <li>Tailwind CSS</li>
+                <li>HTML</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://alexbennycodes.github.io/tailwind-landing-page/"
+                  class="btn project-btn"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/alexbennycodes/tailwind-landing-page"
+                  class="btn project-btn"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- !CONTACT -->
       <section id="contact" class="contact-page">
         <h2 class="text-accent text-center">Get In Touch</h2>
-        <form>
+        <form
+          id="contact-form"
+          action="https://formspree.io/alexbenny2811@gmail.com"
+          method="POST"
+        >
+          <input
+            name="_redirect"
+            type="hidden"
+            id="name"
+            value="https://www.google.com"
+          />
+
           <input
             type="text"
             name="name"
