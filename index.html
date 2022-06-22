@@ -85,22 +85,20 @@
           <h2 class="text-accent">About Me</h2>
           <div class="para-text">
             <p class="text-white">
-              Lorem ipsum dolor sit amet consectetur
-              <span>adipisicing elit</span>. Fugiat aliquid eos dolores sint
-              expedita qui corporis consequuntur earum, quasi explicabo aliquam
-              iure officiis maxime <span>laboriosam est</span> illum suscipit
-              itaque rem natus dolorem sed tempore necessitatibus.
+              Hello! My name is Alex Benny and I enjoying
+              <span>designing</span> and <span>creating</span> websites I
+              recently graduated from St. Stephen's College with
+              <span>BSc Programme with Computer Science</span>.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              sint vel consequatur nemo animi veritatis.
+              I'm quite interested in Web Development because it combines two of
+              my passions: programming and design.
             </p>
             <p>
-              Lorem ipsum dolor sit amet
-              <span>consectetur adipisicing</span> elit. Accusamus, debitis
-              delectus, nihil odit sequi aperiam blanditiis beatae sunt, atque
-              veritatis assumenda recusandae natus excepturi voluptatem aut?
-              Asperiores, quae optio! Quae minus sequi cupiditate at quam?
+              I am passionate about <span>coding</span> and
+              <span>solving problems</span>
+              through code, and I am excited to work alongside other amazing
+              programmers and learn so much more!
             </p>
           </div>
         </div>
@@ -129,7 +127,38 @@
       <section class="projects" id="projects">
         <h2 class="text-accent text-center">Projects</h2>
         <div class="projects-wrapper flex">
-          <div class="project-box left-box">
+          <div class="project-box">
+            <img src="images/project4.png" alt="" class="project-img" />
+            <div class="project-text">
+              <h3 class="text-accent">Weather App</h3>
+              <p class="text-white">
+                The best weather and forecast app built with the OpenWeather
+                API. It displays the current weather as well as hourly and daily
+                forecasts. It has a search function and can display the weather
+                in the user's current location. It provides both Celsius and
+                Fahrenheit temperatures.
+              </p>
+              <ul class="project-tech-used">
+                <li>React</li>
+                <li>Tailwind</li>
+                <li>LuxonLibrary</li>
+                <li>API</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://alexbennycodes.github.io/weather-app/"
+                  class="btn project-btn"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/alexbennycodes/weather-app"
+                  class="btn project-btn"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-box">
             <img src="images/project1.jpeg" alt="" class="project-img" />
             <div class="project-text">
               <h3 class="text-accent">Wordle Clone</h3>
@@ -188,7 +217,7 @@
               </div>
             </div>
           </div>
-          <div class="project-box left-box">
+          <div class="project-box">
             <img src="images/project3.png" alt="" class="project-img" />
             <div class="project-text">
               <h3 class="text-accent">Blockchain Tech Landing Page</h3>
@@ -290,44 +319,55 @@
         reset: true,
         distance: "60px",
         duration: 750,
-        delay: 400,
       });
-      ScrollReveal().reveal(".navbar, h2", {
+      ScrollReveal().reveal(".navbar", {
+        delay: 100,
+        origin: "bottom",
+        easing: "ease-in",
+      });
+      ScrollReveal().reveal(".hero h1,.hero p, .hero a", {
+        delay: 200,
+        interval: 50,
+        origin: "top",
+      });
+      ScrollReveal().reveal(
+        ".about-me h2, .about-me .para-text,  .about-me .profile-img ",
+        {
+          delay: 200,
+          origin: "top",
+          interval: 100,
+        }
+      );
+
+      ScrollReveal().reveal(".skills h2", {
+        delay: 200,
+        origin: "top",
+      });
+
+      ScrollReveal().reveal(".skills-wrapper .card", {
+        delay: 200,
+        origin: "top",
+        interval: 50,
+      });
+
+      ScrollReveal().reveal(".projects h2", {
+        delay: 200,
+        origin: "top",
+      });
+
+      ScrollReveal().reveal(".project-box", {
+        delay: 200,
+        origin: "top",
+        interval: 50,
+      });
+
+      ScrollReveal().reveal(".contact-page h2", {
         delay: 100,
         origin: "top",
-        easing: "ease-in",
-      });
-      ScrollReveal().reveal(".hero", {
-        delay: 200,
-        scale: 0.5,
-        easing: "ease-in",
-      });
-      ScrollReveal().reveal(".about-me-text", {
-        delay: 200,
-        origin: "right",
-        easing: "ease-in",
-      });
-      ScrollReveal().reveal(".profile-img, .left-box", {
-        delay: 400,
-        origin: "left",
-        easing: "ease-in",
-      });
-      ScrollReveal().reveal(".skills-wrapper .card", {
-        delay: 300,
-        origin: "bottom",
-        interval: 100,
-      });
-      ScrollReveal().reveal(".right-box", {
-        delay: 300,
-        origin: "right",
-        easing: "ease-in",
       });
       ScrollReveal().reveal("form", {
-        delay: 300,
-        origin: "top",
-        easing: "ease-in",
+        delay: 0,
       });
-      ScrollReveal().reveal("footer", { opacity: 0, easing: "ease-in" });
     </script>
   </body>
 </html>
